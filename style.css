@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+padding:20px;
+}
+
+/* wrapper */
+.wrapper{
+width:100%;
+max-width:1200px;
+display:flex;
+justify-content:center;
+}
+
+/* card */
+.card{
+background:#ffffff;
+width:100%;
+max-width:420px;
+padding:40px 30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 20px 60px rgba(0,0,0,0.25);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* title */
+h1{
+margin-bottom:25px;
+font-size:2rem;
+color:#203a43;
+}
+
+/* input area */
+.field{
+margin-bottom:18px;
+text-align:left;
+}
+
+.field label{
+font-weight:600;
+font-size:15px;
+color:#333;
+}
+
+.field input{
+width:100%;
+padding:12px;
+margin-top:6px;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:16px;
+transition:.2s;
+}
+
+.field input:focus{
+border-color:#2c5364;
+outline:none;
+box-shadow:0 0 0 2px rgba(44,83,100,0.15);
+}
+
+/* button */
+button{
+width:100%;
+padding:14px;
+margin-top:10px;
+border:none;
+border-radius:12px;
+background:#2c5364;
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.25s;
+}
+
+button:hover{
+background:#203a43;
+}
+
+/* result */
+.result-box{
+margin-top:30px;
+padding-top:20px;
+border-top:1px solid #eee;
+}
+
+.result-box p{
+font-weight:600;
+color:#444;
+margin-bottom:10px;
+}
+
+#result{
+font-size:40px;
+font-weight:700;
+color:#2c5364;
+margin-bottom:15px;
+}
+
+.status span{
+font-weight:700;
+color:#203a43;
+}
+
+/* responsive */
+@media(max-width:500px){
+
+.card{
+padding:30px 20px;
+border-radius:20px;
+}
+
+h1{
+font-size:1.6rem;
+}
+
+#result{
+font-size:32px;
+}
+
+}
